@@ -744,7 +744,6 @@
   <ul class="nav-links" id="nav-links">
     <li><a href="#" onclick="smoothNav(null); return false;">About</a></li>
     <li><a href="#programs" onclick="smoothNav('programs'); return false;">Programs</a></li>
-    <li><a href="#calculator" onclick="smoothNav('calculator'); return false;">Risk Score</a></li>
     <li><a href="#screening" onclick="smoothNav('screening'); return false;">Screening</a></li>
     <li><a href="#contact" class="nav-cta" onclick="smoothNav('contact'); return false;">Connect with us</a></li>
   </ul>
@@ -759,7 +758,28 @@
   <div class="hero-bg"></div>
   <div class="hero-content" style="max-width: 640px;">
     <p class="hero-eyebrow">Our mission</p>
-    <p>Ho'ola, meaning "to heal," is improving health outcomes for all men in Hawai'i by providing free blood pressure, urine dipstick, and BMI screenings in trusted community spaces — targeting the conditions that hit our communities hardest.</p>
+    <p>Ho'ola, meaning "to heal," is improving health outcomes for all men in Hawai'i by providing free blood pressure and urine dipstick screenings in trusted community spaces — targeting the conditions that hit our communities hardest.</p>
+  </div>
+</section>
+
+
+<!-- SCREENING SURVEY CALLOUT -->
+<section id="screening" style="padding: 4rem; background: var(--cream); position: relative; overflow: hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%, rgba(244,168,40,0.10) 0%, transparent 65%);pointer-events:none;"></div>
+  <div style="position: relative; z-index: 1; max-width: 600px;">
+    <p style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--clay); margin-bottom: 0.75rem; font-weight: 600;">Community Screening</p>
+    <h2 style="font-family: 'Lora', serif; font-size: clamp(1.5rem, 3vw, 2.25rem); color: var(--earth); line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 0.85rem;">Help us understand your needs.</h2>
+    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; font-weight: 400; max-width: 440px; margin-bottom: 1.75rem;">Anonymous questions about your healthcare experiences. Takes 2 minutes. No names or contact info collected.</p>
+    <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+      <a href="https://forms.gle/c4hfZt8eDKKg733b7" target="_blank" style="display: inline-flex; align-items: center; gap: 0.6rem; background: var(--clay); color: white; padding: 0.875rem 1.75rem; border-radius: 999px; font-family: 'Lora', serif; font-size: 0.95rem; font-weight: 500; text-decoration: none; transition: background 0.2s;" onmouseover="this.style.background='var(--bark)'" onmouseout="this.style.background='var(--clay)'">
+        Take the screening
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <span style="font-size: 0.8rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.35rem;">
+        <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><rect x="3" y="7" width="10" height="8" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M5.5 7V5a2.5 2.5 0 015 0v2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        100% anonymous
+      </span>
+    </div>
   </div>
 </section>
 
@@ -876,7 +896,7 @@
 
     <p style="font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: #F4A828; font-weight: 500; margin-bottom: 0.6rem;">Why Hawai'i needs this</p>
     <h2 style="font-family: 'Lora', serif; font-size: clamp(1.5rem, 3vw, 2.25rem); color: white; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 0.75rem;">These conditions don't hit everyone equally.</h2>
-    <p style="font-size: 0.95rem; color: rgba(255,255,255,0.6); line-height: 1.7; max-width: 540px; margin-bottom: 2.5rem; font-weight: 300;">Diabetes, hypertension, obesity, and kidney disease are disproportionately affecting communities across Hawai'i.</p>
+    <p style="font-size: 0.95rem; color: rgba(255,255,255,0.6); line-height: 1.7; max-width: 540px; margin-bottom: 2.5rem; font-weight: 300;">Diabetes, hypertension, and kidney disease are disproportionately affecting communities across Hawai'i.</p>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-bottom: 2rem;">
 
@@ -910,31 +930,22 @@
         </div>
       </div>
 
-      <!-- Obesity -->
-      <div style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 1.5rem; border-top: 3px solid #EF9F27;">
-        <div style="font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 0.5rem;">Obesity</div>
-        <div style="font-family: 'Lora', serif; font-size: 2.25rem; font-weight: 700; color: #F4A828; line-height: 1; margin-bottom: 0.5rem;">60%</div>
-        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.75); line-height: 1.6; font-weight: 300;">of Hawai'i adults are overweight or obese — a major driver of diabetes, hypertension, and kidney disease.</p>
-        <div style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1);">
-          <p style="font-size: 0.82rem; color: rgba(255,255,255,0.55); line-height: 1.5; font-weight: 300;">Obesity is linked to <strong style="color: #F4A828;">53%</strong> of new type 2 diabetes cases each year.</p>
-        </div>
-      </div>
     </div>
 
     <!-- Connection callout -->
     <div style="background: rgba(244,168,40,0.1); border: 1px solid rgba(244,168,40,0.25); border-radius: 16px; padding: 1.5rem 1.75rem; margin-bottom: 1.5rem;">
       <h3 style="font-family: 'Lora', serif; font-size: 1.15rem; color: white; margin-bottom: 0.75rem;">These conditions are connected.</h3>
-      <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.7; font-weight: 300; margin-bottom: 0;">Diabetes and hypertension are the two leading causes of kidney disease. Obesity drives all three. That's why our screening checks <strong style="color: white;">blood pressure</strong>, <strong style="color: white;">urine</strong> (for kidney damage and diabetes), and <strong style="color: white;">BMI</strong> — three tests that take 15 minutes and can catch problems years before symptoms appear.</p>
+      <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.7; font-weight: 300; margin-bottom: 0;">Diabetes and hypertension are the two leading causes of kidney disease — and high blood pressure often shows no symptoms until damage is already done. That's why our screening checks <strong style="color: white;">blood pressure</strong> and <strong style="color: white;">urine</strong> (for kidney damage and diabetes) — two tests that take 10 minutes and can catch problems years before symptoms appear.</p>
     </div>
 
     <!-- Disparity callout -->
     <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 1.5rem 1.75rem;">
       <p style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--clay); font-weight: 500; margin-bottom: 0.75rem;">Who's most affected</p>
-      <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.7; font-weight: 300;">Native Hawaiian, Filipino, and Pacific Islander men face the highest rates of kidney disease, diabetes, and obesity in Hawai'i. End-stage kidney disease is 9.5× more prevalent among Native Hawaiians than non-Hispanic whites, and 88% of Hawai'i's dialysis patients are of Asian or Pacific Islander ancestry. These are the communities our screenings are built for.</p>
+      <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.7; font-weight: 300;">Native Hawaiian, Filipino, and Pacific Islander men face the highest rates of kidney disease and diabetes in Hawai'i. End-stage kidney disease is 9.5× more prevalent among Native Hawaiians than non-Hispanic whites, and 88% of Hawai'i's dialysis patients are of Asian or Pacific Islander ancestry. These are the communities our screenings are built for.</p>
     </div>
 
     <div style="margin-top: 1.5rem; padding-top: 1rem;">
-      <p style="font-size: 0.72rem; color: rgba(255,255,255,0.25); line-height: 1.6; font-weight: 300;">Sources: Hawai'i BRFSS (2022); National Kidney Foundation of Hawai'i; American Diabetes Association, Burden of Diabetes in Hawaii (2024); TFAH State of Obesity Report (2025); CDC Preventing Chronic Disease (2020); USRDS Annual Data Report.</p>
+      <p style="font-size: 0.72rem; color: rgba(255,255,255,0.25); line-height: 1.6; font-weight: 300;">Sources: Hawai'i BRFSS (2022); National Kidney Foundation of Hawai'i; American Diabetes Association, Burden of Diabetes in Hawaii (2024); CDC Preventing Chronic Disease (2020); USRDS Annual Data Report.</p>
     </div>
 
   </div>
@@ -957,7 +968,7 @@
           <div>
             <p style="font-size: 0.8rem; font-weight: 500; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Preventative Screening</p>
             <div style="font-family: 'Lora', serif; font-size: 3.5rem; font-weight: 500; color: white; line-height: 1;">$0</div>
-            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); margin-top: 0.75rem; line-height: 1.6;">Blood pressure, urine dipstick, and BMI check. Takes 15 minutes. Know your numbers today.</p>
+            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); margin-top: 0.75rem; line-height: 1.6;">Blood pressure and urine dipstick check. Takes 10 minutes. Know your numbers today.</p>
           </div>
 
         </div>
@@ -1053,7 +1064,7 @@
 </section>
 <section id="programs">
   <div class="section-title">Programs & Services</div>
-  <p class="section-subtitle" style="white-space: nowrap;">Targeting diabetes, hypertension, kidney disease, and obesity.</p>
+  <p class="section-subtitle" style="white-space: nowrap;">Targeting diabetes, hypertension, and kidney disease.</p>
   <div class="programs-grid">
     <div class="program-card">
       <div class="program-card-top" style="background: var(--sage);"></div>
@@ -1072,14 +1083,6 @@
       </div>
     </div>
     <div class="program-card">
-      <div class="program-card-top" style="background: #EF9F27;"></div>
-      <div class="program-card-body">
-        <h3>BMI Measurement</h3>
-        <p>Height, weight, and BMI calculated on-site with a clinical scale and stadiometer. BMI is a key risk factor for diabetes, hypertension, and kidney disease.</p>
-        <span class="program-tag" style="background: var(--mist); color: #996B00;">Monthly · Free</span>
-      </div>
-    </div>
-    <div class="program-card">
       <div class="program-card-top" style="background: var(--bark);"></div>
       <div class="program-card-body">
         <h3>Health Navigation</h3>
@@ -1089,395 +1092,6 @@
     </div>
   </div>
 </section>
-
-<!-- RISK CALCULATOR -->
-<section id="calculator" style="background: #0a0e14; padding: 5rem 4rem;">
-  <div style="max-width: 720px; margin: 0 auto;">
-
-    <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;">
-      <div style="width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 6px #22c55e;animation:blink 1.5s infinite;"></div>
-      <span style="font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:#22c55e;font-weight:600;">Live Health Market</span>
-    </div>
-    <h2 style="font-family:'Lora',serif;font-size:clamp(1.75rem,3vw,2.5rem);color:white;margin-bottom:0.5rem;letter-spacing:-0.01em;">What are your odds?</h2>
-    <p style="font-size:0.95rem;color:rgba(255,255,255,0.75);margin-bottom:2rem;font-weight:300;">Answer 5 questions. See your live odds update in real time.</p>
-
-    <!-- Live odds ticker -->
-    <div style="background:#1a2235;border:1px solid rgba(255,255,255,0.2);border-radius:12px;padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;gap:1.5rem;flex-wrap:wrap;overflow:hidden;">
-      <div style="flex:1;min-width:140px;">
-        <div style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:0.25rem;">Hypertension by 50</div>
-        <div style="display:flex;align-items:baseline;gap:0.5rem;">
-          <span id="odds-htn" style="font-family:'Lora',serif;font-size:1.4rem;font-weight:500;color:white;transition:color 0.3s;">—</span>
-          <span id="pct-htn" style="font-size:0.8rem;color:rgba(255,255,255,0.8);">—%</span>
-        </div>
-      </div>
-      <div style="flex:1;min-width:140px;border-left:1px solid rgba(255,255,255,0.25);padding-left:1.5rem;">
-        <div style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:0.25rem;">Diabetes / Prediabetes</div>
-        <div style="display:flex;align-items:baseline;gap:0.5rem;">
-          <span id="odds-dm" style="font-family:'Lora',serif;font-size:1.4rem;font-weight:500;color:white;transition:color 0.3s;">—</span>
-          <span id="pct-dm" style="font-size:0.8rem;color:rgba(255,255,255,0.8);">—%</span>
-        </div>
-      </div>
-      <div style="flex:1;min-width:140px;border-left:1px solid rgba(255,255,255,0.25);padding-left:1.5rem;">
-        <div style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:0.25rem;">Heart Attack before 60</div>
-        <div style="display:flex;align-items:baseline;gap:0.5rem;">
-          <span id="odds-cv" style="font-family:'Lora',serif;font-size:1.4rem;font-weight:500;color:white;transition:color 0.3s;">—</span>
-          <span id="pct-cv" style="font-size:0.8rem;color:rgba(255,255,255,0.8);">—%</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Question card -->
-    <div style="background:#1a2235;border:1px solid rgba(255,255,255,0.2);border-radius:16px;overflow:hidden;">
-      <div style="height:3px;background:rgba(255,255,255,0.2);">
-        <div id="calc-progress" style="height:100%;background:#F4A828;width:0%;transition:width 0.4s ease;"></div>
-      </div>
-
-      <div id="calc-questions" style="padding:1.75rem;">
-
-        <!-- Q1: Age -->
-        <div class="calc-step" id="step-1">
-          <div style="display:flex;justify-content:space-between;margin-bottom:1.25rem;">
-            <span style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);">1 / 5</span>
-            <span style="font-size:0.7rem;color:rgba(255,255,255,0.65);">Answer to update your odds</span>
-          </div>
-          <h3 style="font-family:'Lora',serif;font-size:1.2rem;color:white;margin-bottom:1.25rem;">How old are you?</h3>
-          <div style="display:flex;flex-direction:column;gap:0.6rem;">
-            <button class="sb-btn" onclick="selectOpt(1,{htn:5,dm:5,cv:3})">Under 35</button>
-            <button class="sb-btn" onclick="selectOpt(1,{htn:15,dm:12,cv:8})">35–44</button>
-            <button class="sb-btn" onclick="selectOpt(1,{htn:28,dm:22,cv:16})">45–54</button>
-            <button class="sb-btn" onclick="selectOpt(1,{htn:40,dm:32,cv:24})">55 or older</button>
-          </div>
-        </div>
-
-        <!-- Q2: Height + Weight → BMI -->
-        <div class="calc-step" id="step-2" style="display:none;">
-          <div style="display:flex;justify-content:space-between;margin-bottom:1.25rem;">
-            <span style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);">2 / 5</span>
-            <span style="font-size:0.7rem;color:rgba(255,255,255,0.65);">Odds updating live</span>
-          </div>
-          <h3 style="font-family:'Lora',serif;font-size:1.2rem;color:white;margin-bottom:0.4rem;">Height & Weight</h3>
-          <p style="font-size:0.82rem;color:rgba(255,255,255,0.7);margin-bottom:1.25rem;">Used to calculate your BMI — a key metabolic risk factor.</p>
-          <div style="display:flex;gap:1rem;margin-bottom:0.75rem;flex-wrap:wrap;">
-            <div style="flex:1;min-width:120px;">
-              <label style="font-size:0.75rem;color:rgba(255,255,255,0.8);display:block;margin-bottom:0.4rem;">Height (ft)</label>
-              <input id="heightFt" type="number" min="4" max="7" placeholder="e.g. 5" style="width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.35);border-radius:8px;padding:0.75rem 1rem;color:white;font-family:'Lora',serif;font-size:1rem;">
-            </div>
-            <div style="flex:1;min-width:120px;">
-              <label style="font-size:0.75rem;color:rgba(255,255,255,0.8);display:block;margin-bottom:0.4rem;">Height (in)</label>
-              <input id="heightIn" type="number" min="0" max="11" placeholder="e.g. 10" style="width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.35);border-radius:8px;padding:0.75rem 1rem;color:white;font-family:'Lora',serif;font-size:1rem;">
-            </div>
-            <div style="flex:1;min-width:120px;">
-              <label style="font-size:0.75rem;color:rgba(255,255,255,0.8);display:block;margin-bottom:0.4rem;">Weight (lbs)</label>
-              <input id="weight" type="number" min="100" max="400" placeholder="e.g. 195" style="width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.35);border-radius:8px;padding:0.75rem 1rem;color:white;font-family:'Lora',serif;font-size:1rem;">
-            </div>
-          </div>
-          <div id="bmi-display" style="font-size:0.85rem;color:rgba(255,255,255,0.35);margin-bottom:1rem;min-height:1.2rem;"></div>
-          <button onclick="submitBMI()" style="background:#F4A828;border:none;border-radius:10px;padding:0.875rem 1.5rem;font-family:'Lora',serif;font-size:1rem;color:#0a0e14;font-weight:600;cursor:pointer;width:100%;">Calculate →</button>
-        </div>
-
-        <!-- Q3: Smoking + Alcohol (multi-select) -->
-        <div class="calc-step" id="step-3" style="display:none;">
-          <div style="display:flex;justify-content:space-between;margin-bottom:1.25rem;">
-            <span style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);">3 / 5</span>
-            <span style="font-size:0.7rem;color:rgba(255,255,255,0.65);">Select all that apply</span>
-          </div>
-          <h3 style="font-family:'Lora',serif;font-size:1.2rem;color:white;margin-bottom:0.4rem;">Smoking & Alcohol</h3>
-          <p style="font-size:0.82rem;color:rgba(255,255,255,0.7);margin-bottom:1.25rem;">Select all that apply. Anonymous — no one sees this.</p>
-          <div style="display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1rem;">
-            <button class="sb-multi" id="m-smoke" onclick="toggleMulti(this,{htn:8,dm:5,cv:16})">🚬 Current smoker / tobacco user</button>
-            <button class="sb-multi" id="m-exsmoke" onclick="toggleMulti(this,{htn:3,dm:3,cv:6})">Former smoker (quit)</button>
-            <button class="sb-multi" id="m-drink" onclick="toggleMulti(this,{htn:6,dm:4,cv:4})">🍺 Drink alcohol regularly (4+ drinks/week)</button>
-            <button class="sb-multi" id="m-none" onclick="toggleMultiNone()">None of the above</button>
-          </div>
-          <button onclick="submitMulti(3)" style="background:#F4A828;border:none;border-radius:10px;padding:0.875rem 1.5rem;font-family:'Lora',serif;font-size:1rem;color:#0a0e14;font-weight:600;cursor:pointer;width:100%;">Next →</button>
-        </div>
-
-        <!-- Q4: Activity -->
-        <div class="calc-step" id="step-4" style="display:none;">
-          <div style="display:flex;justify-content:space-between;margin-bottom:1.25rem;">
-            <span style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);">4 / 5</span>
-            <span style="font-size:0.7rem;color:rgba(255,255,255,0.65);">Odds updating live</span>
-          </div>
-          <h3 style="font-family:'Lora',serif;font-size:1.2rem;color:white;margin-bottom:0.4rem;">How active are you?</h3>
-          <p style="font-size:0.82rem;color:rgba(255,255,255,0.7);margin-bottom:1.25rem;">Physical work counts — but it's not the same as cardio.</p>
-          <div style="display:flex;flex-direction:column;gap:0.6rem;">
-            <button class="sb-btn" onclick="selectOpt(4,{htn:-6,dm:-6,cv:-5})">Very active — cardio 4+ days/week</button>
-            <button class="sb-btn" onclick="selectOpt(4,{htn:0,dm:0,cv:0})">Moderately active — 2–3 days/week</button>
-            <button class="sb-btn" onclick="selectOpt(4,{htn:8,dm:8,cv:6})">Lightly active — mostly on the job</button>
-            <button class="sb-btn" onclick="selectOpt(4,{htn:16,dm:15,cv:12})">Not very active</button>
-          </div>
-        </div>
-
-        <!-- Q5: Family history (condition-specific) -->
-        <div class="calc-step" id="step-5" style="display:none;">
-          <div style="display:flex;justify-content:space-between;margin-bottom:1.25rem;">
-            <span style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);">5 / 5</span>
-            <span style="font-size:0.7rem;color:rgba(255,255,255,0.65);">Select all that apply</span>
-          </div>
-          <h3 style="font-family:'Lora',serif;font-size:1.2rem;color:white;margin-bottom:0.4rem;">Family history</h3>
-          <p style="font-size:0.82rem;color:rgba(255,255,255,0.7);margin-bottom:1.25rem;">Parent, sibling, or grandparent diagnosed before age 60.</p>
-          <div style="display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1rem;">
-            <button class="sb-multi" id="f-htn" onclick="toggleMulti(this,{htn:12,dm:0,cv:5})">❤️ Heart disease or hypertension</button>
-            <button class="sb-multi" id="f-dm" onclick="toggleMulti(this,{htn:3,dm:14,cv:4})">🩸 Diabetes or prediabetes</button>
-            <button class="sb-multi" id="f-stroke" onclick="toggleMulti(this,{htn:6,dm:0,cv:10})">🧠 Stroke</button>
-            <button class="sb-multi" id="f-none" onclick="toggleMultiNone()">None of the above</button>
-          </div>
-          <button onclick="submitMulti(5)" style="background:#F4A828;border:none;border-radius:10px;padding:0.875rem 1.5rem;font-family:'Lora',serif;font-size:1rem;color:#0a0e14;font-weight:600;cursor:pointer;width:100%;">See my odds →</button>
-        </div>
-
-      </div>
-
-      <!-- Result -->
-      <div id="calc-result" style="display:none;padding:1.75rem;">
-        <div style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-bottom:1.25rem;">Your Health Market Position</div>
-        <div style="display:flex;flex-direction:column;gap:0.75rem;margin-bottom:1.5rem;" id="market-cards"></div>
-        <div style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.2);border-radius:12px;padding:1.25rem;margin-bottom:1.25rem;">
-          <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-bottom:0.75rem;">vs. Average man your age</div>
-          <div id="vs-market" style="font-family:'Lora',serif;font-size:1rem;color:white;line-height:1.7;"></div>
-        </div>
-        <button onclick="resetSBCalc()" style="background:none;border:none;color:rgba(255,255,255,0.6);font-size:0.82rem;cursor:pointer;font-family:'Lora',serif;text-decoration:underline;">Retake</button>
-        <p style="font-size:0.72rem;color:rgba(255,255,255,0.5);margin-top:0.75rem;line-height:1.6;font-weight:300;"><strong style="color:rgba(255,255,255,0.7);">Disclaimer:</strong> This tool provides general risk estimates based on population data and self-reported answers. It is not a medical diagnosis. Consult a healthcare provider for personalized advice.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<style>
-  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
-  .sb-btn {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 10px;
-    padding: 0.875rem 1.1rem;
-    font-family: 'Lora', serif;
-    font-size: 0.95rem;
-    color: rgba(255,255,255,0.9);
-    cursor: pointer;
-    text-align: left;
-    transition: all 0.15s;
-    width: 100%;
-  }
-  .sb-btn:hover { border-color: #F4A828; color: white; background: rgba(244,168,40,0.08); }
-  .sb-btn.selected { border-color: #F4A828; background: rgba(244,168,40,0.15); color: white; font-weight: 500; }
-  .sb-multi {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 10px;
-    padding: 0.875rem 1.1rem;
-    font-family: 'Lora', serif;
-    font-size: 0.95rem;
-    color: rgba(255,255,255,0.9);
-    cursor: pointer;
-    text-align: left;
-    transition: all 0.15s;
-    width: 100%;
-  }
-  .sb-multi:hover { border-color: #F4A828; color: white; }
-  .sb-multi.active { border-color: #F4A828; background: rgba(244,168,40,0.15); color: white; font-weight: 500; }
-  #heightFt:focus, #heightIn:focus, #weight:focus { outline: none; border-color: #F4A828; }
-</style>
-
-<script>
-  const sbRisks = { htn: 0, dm: 0, cv: 0 };
-  const multiDeltas = {};
-  let currentStep = 1;
-
-  function pctToAmericanOdds(pct) {
-    pct = Math.min(95, Math.max(5, pct));
-    if (pct >= 50) return '-' + Math.round((pct / (100 - pct)) * 100);
-    return '+' + Math.round(((100 - pct) / pct) * 100);
-  }
-
-  function updateTicker(dir) {
-    ['htn','dm','cv'].forEach(k => {
-      const pct = Math.min(95, Math.max(5, sbRisks[k]));
-      const el = document.getElementById('odds-' + k);
-      const pe = document.getElementById('pct-' + k);
-      el.textContent = pctToAmericanOdds(pct);
-      pe.textContent = pct + '%';
-      const cls = dir === 'bad' ? 'odds-flash-red' : 'odds-flash-green';
-      el.classList.add(cls); pe.classList.add(cls);
-      setTimeout(() => { el.classList.remove(cls); pe.classList.remove(cls); }, 800);
-    });
-  }
-
-  function applyDelta(deltas, sign) {
-    sbRisks.htn += deltas.htn * sign;
-    sbRisks.dm += deltas.dm * sign;
-    sbRisks.cv += deltas.cv * sign;
-  }
-
-  function selectOpt(step, deltas) {
-    // Remove previous
-    if (window['prev_' + step]) applyDelta(window['prev_' + step], -1);
-    window['prev_' + step] = deltas;
-    applyDelta(deltas, 1);
-    document.querySelectorAll(`#step-${step} .sb-btn`).forEach(b => b.classList.remove('selected'));
-    event.target.closest('.sb-btn').classList.add('selected');
-    const bad = (deltas.htn + deltas.dm + deltas.cv) > 0;
-    updateTicker(bad ? 'bad' : 'good');
-    setTimeout(() => {
-      document.getElementById('calc-progress').style.width = ((step / 5) * 100) + '%';
-      document.getElementById('step-' + step).style.display = 'none';
-      document.getElementById('step-' + (step + 1)).style.display = 'block';
-      currentStep = step + 1;
-    }, 380);
-  }
-
-  function submitBMI() {
-    const ft = parseFloat(document.getElementById('heightFt').value) || 0;
-    const inch = parseFloat(document.getElementById('heightIn').value) || 0;
-    const lbs = parseFloat(document.getElementById('weight').value) || 0;
-    const totalInches = (ft * 12) + inch;
-    if (!totalInches || !lbs) { document.getElementById('bmi-display').textContent = 'Please enter your height and weight.'; return; }
-    const bmi = (lbs / (totalInches * totalInches)) * 703;
-    const bmiR = Math.round(bmi * 10) / 10;
-    let deltas, label;
-    if (bmi < 18.5) { deltas = {htn:2,dm:2,cv:2}; label = `BMI ${bmiR} — Underweight`; }
-    else if (bmi < 25) { deltas = {htn:0,dm:0,cv:0}; label = `BMI ${bmiR} — Healthy weight ✓`; }
-    else if (bmi < 30) { deltas = {htn:10,dm:12,cv:8}; label = `BMI ${bmiR} — Overweight`; }
-    else if (bmi < 35) { deltas = {htn:18,dm:22,cv:14}; label = `BMI ${bmiR} — Obese (Class I)`; }
-    else { deltas = {htn:26,dm:30,cv:20}; label = `BMI ${bmiR} — Obese (Class II+)`; }
-    if (window.prev_bmi) applyDelta(window.prev_bmi, -1);
-    window.prev_bmi = deltas;
-    applyDelta(deltas, 1);
-    document.getElementById('bmi-display').textContent = label;
-    const bad = bmi >= 25;
-    updateTicker(bad ? 'bad' : 'good');
-    setTimeout(() => {
-      document.getElementById('calc-progress').style.width = '40%';
-      document.getElementById('step-2').style.display = 'none';
-      document.getElementById('step-3').style.display = 'block';
-      currentStep = 3;
-    }, 500);
-  }
-
-  function toggleMulti(btn, deltas) {
-    const id = btn.id;
-    document.getElementById('m-none') && document.getElementById('m-none').classList && document.getElementById('m-none').classList.remove('active');
-    document.getElementById('f-none') && document.getElementById('f-none').classList && document.getElementById('f-none').classList.remove('active');
-    if (btn.classList.contains('active')) {
-      btn.classList.remove('active');
-      if (multiDeltas[id]) { applyDelta(multiDeltas[id], -1); delete multiDeltas[id]; }
-    } else {
-      btn.classList.add('active');
-      multiDeltas[id] = deltas;
-      applyDelta(deltas, 1);
-      updateTicker('bad');
-    }
-  }
-
-  function toggleMultiNone() {
-    const noneId = currentStep === 3 ? 'm-none' : 'f-none';
-    const others = currentStep === 3 ? ['m-smoke','m-exsmoke','m-drink'] : ['f-htn','f-dm','f-stroke'];
-    others.forEach(id => {
-      const el = document.getElementById(id);
-      if (el && el.classList.contains('active')) {
-        el.classList.remove('active');
-        if (multiDeltas[id]) { applyDelta(multiDeltas[id], -1); delete multiDeltas[id]; }
-      }
-    });
-    document.getElementById(noneId).classList.add('active');
-  }
-
-  function submitMulti(step) {
-    document.getElementById('calc-progress').style.width = ((step / 5) * 100) + '%';
-    document.getElementById('step-' + step).style.display = 'none';
-    if (step < 5) {
-      document.getElementById('step-' + (step + 1)).style.display = 'block';
-      currentStep = step + 1;
-    } else {
-      document.getElementById('calc-progress').style.width = '100%';
-      showSBResult();
-    }
-  }
-
-  function showSBResult() {
-    document.getElementById('calc-questions').style.display = 'none';
-    document.getElementById('calc-result').style.display = 'block';
-    const htn = Math.min(92, Math.max(8, sbRisks.htn));
-    const dm = Math.min(90, Math.max(6, sbRisks.dm));
-    const cv = Math.min(88, Math.max(5, sbRisks.cv));
-    const avgHtn = 47, avgDm = 38, avgCv = 22;
-    const markets = [
-      { label: 'Hypertension by age 50', pct: htn, avg: avgHtn },
-      { label: 'Diabetes / Prediabetes', pct: dm, avg: avgDm },
-      { label: 'Heart Attack before 60', pct: cv, avg: avgCv },
-    ];
-    document.getElementById('market-cards').innerHTML = markets.map(m => {
-      const odds = pctToAmericanOdds(m.pct);
-      const avgOdds = pctToAmericanOdds(m.avg);
-      const beating = m.pct < m.avg;
-      const diff = Math.abs(m.pct - m.avg);
-      const badge = beating
-        ? `<span style="background:rgba(34,197,94,0.15);color:#22c55e;font-size:0.72rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;">↓ ${diff}% below market</span>`
-        : `<span style="background:rgba(239,68,68,0.15);color:#ef4444;font-size:0.72rem;padding:0.2rem 0.6rem;border-radius:999px;font-weight:600;">↑ ${diff}% above market</span>`;
-      return `<div style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.2);border-radius:12px;padding:1.1rem 1.25rem;">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.6rem;flex-wrap:wrap;gap:0.5rem;">
-          <span style="font-size:0.78rem;color:rgba(255,255,255,0.85);text-transform:uppercase;letter-spacing:0.08em;">${m.label}</span>${badge}
-        </div>
-        <div style="display:flex;align-items:baseline;gap:1.5rem;flex-wrap:wrap;">
-          <div><div style="font-size:0.65rem;color:rgba(255,255,255,0.6);margin-bottom:0.15rem;">YOUR ODDS</div>
-            <div style="font-family:'Lora',serif;font-size:1.6rem;font-weight:500;color:${beating?'#22c55e':'#ef4444'};">${odds}</div>
-            <div style="font-size:0.78rem;color:rgba(255,255,255,0.75);">${m.pct}% implied</div></div>
-          <div style="border-left:1px solid rgba(255,255,255,0.25);padding-left:1.5rem;">
-            <div style="font-size:0.65rem;color:rgba(255,255,255,0.6);margin-bottom:0.15rem;">MARKET LINE</div>
-            <div style="font-family:'Lora',serif;font-size:1.6rem;font-weight:500;color:rgba(255,255,255,0.7);">${avgOdds}</div>
-            <div style="font-size:0.78rem;color:rgba(255,255,255,0.65);">${m.avg}% avg man</div></div>
-        </div>
-        <div style="margin-top:0.75rem;height:4px;background:rgba(255,255,255,0.15);border-radius:999px;overflow:hidden;">
-          <div style="height:100%;border-radius:999px;background:${beating?'#22c55e':'#ef4444'};width:0%;transition:width 1s ease;" data-w="${m.pct}"></div>
-        </div></div>`;
-    }).join('');
-    setTimeout(() => { document.querySelectorAll('[data-w]').forEach(el => { el.style.width = el.dataset.w + '%'; }); }, 200);
-    const totalPct = htn + dm + cv;
-    const totalAvg = avgHtn + avgDm + avgCv;
-    const beating = totalPct < totalAvg;
-    document.getElementById('vs-market').innerHTML = beating
-      ? `<span style="color:#22c55e;font-weight:500;">You're beating the market</span> — your combined risk is <strong style="color:white;">${totalAvg - totalPct} points below</strong> the average man your age. A screening will confirm these numbers.`
-      : `<span style="color:#ef4444;font-weight:500;">The market has the edge on you</span> — your combined risk runs <strong style="color:white;">${totalPct - totalAvg} points above</strong> the average. A free screening shows you exactly where to start.`;
-  }
-
-  function resetSBCalc() {
-    sbRisks.htn = 0; sbRisks.dm = 0; sbRisks.cv = 0;
-    Object.keys(multiDeltas).forEach(k => delete multiDeltas[k]);
-    window.prev_bmi = null;
-    [1,2,3,4,5].forEach(k => { const p = window['prev_' + k]; if (p) window['prev_' + k] = null; });
-    document.querySelectorAll('.sb-btn,.sb-multi').forEach(b => b.classList.remove('selected','active'));
-    document.getElementById('calc-result').style.display = 'none';
-    document.getElementById('calc-questions').style.display = 'block';
-    document.getElementById('bmi-display').textContent = '';
-    ['heightFt','heightIn','weight'].forEach(id => { const el = document.getElementById(id); if(el) el.value=''; });
-    for (let i = 1; i <= 5; i++) { const el = document.getElementById('step-' + i); if (el) el.style.display = i === 1 ? 'block' : 'none'; }
-    document.getElementById('calc-progress').style.width = '0%';
-    ['htn','dm','cv'].forEach(k => {
-      document.getElementById('odds-' + k).textContent = '—';
-      document.getElementById('pct-' + k).textContent = '—%';
-    });
-    currentStep = 1;
-  }
-</script>
-
-<!-- SCREENING SURVEY CALLOUT -->
-<section id="screening" style="padding: 4rem; background: var(--earth); position: relative; overflow: hidden;">
-  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%, rgba(193,122,74,0.18) 0%, transparent 65%);pointer-events:none;"></div>
-  <div style="position: relative; z-index: 1; max-width: 600px;">
-    <p style="font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--clay-light); opacity: 0.7; margin-bottom: 0.75rem;">Community Screening</p>
-    <h2 style="font-family: 'Lora', serif; font-size: clamp(1.5rem, 3vw, 2.25rem); color: var(--cream); line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 0.85rem;">Help us understand your needs.</h2>
-    <p style="font-size: 0.95rem; color: rgba(247,243,236,0.55); line-height: 1.7; font-weight: 300; max-width: 440px; margin-bottom: 1.75rem;">Anonymous questions about your healthcare experiences. Takes 2 minutes. No names or contact info collected.</p>
-    <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
-      <a href="https://forms.gle/c4hfZt8eDKKg733b7" target="_blank" style="display: inline-flex; align-items: center; gap: 0.6rem; background: var(--clay); color: white; padding: 0.875rem 1.75rem; border-radius: 999px; font-family: 'Lora', serif; font-size: 0.95rem; font-weight: 500; text-decoration: none; transition: background 0.2s;" onmouseover="this.style.background='#6B4F35'" onmouseout="this.style.background='var(--clay)'">
-        Take the screening
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <span style="font-size: 0.8rem; color: rgba(247,243,236,0.35); display: flex; align-items: center; gap: 0.35rem;">
-        <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><rect x="3" y="7" width="10" height="8" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M5.5 7V5a2.5 2.5 0 015 0v2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-        100% anonymous
-      </span>
-    </div>
-  </div>
-</section>
-
 
 <!-- EDUCATION -->
 <section id="education" style="padding: 5rem 4rem; background: var(--mist);">
@@ -1575,7 +1189,7 @@
 
   </div>
 
-  <!-- Second row: Urine Dipstick + BMI -->
+  <!-- Second row: Urine Dipstick -->
   <div style="margin-top: 2rem; display: flex; gap: 2rem; align-items: stretch; flex-wrap: wrap; justify-content: center;" class="charts-flex">
 
     <!-- Urine Dipstick Chart -->
@@ -1635,49 +1249,6 @@
     </div>
     </div>
 
-    <!-- BMI Chart -->
-    <div style="flex: 1; min-width: 500px; max-width: 600px; display: flex; flex-direction: column;" class="chart-col">
-    <p style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: #EF9F27; font-weight: 500; margin-bottom: 0.75rem;">Body Mass Index (BMI)</p>
-
-    <div class="bp-table-desktop" style="background: white; border-radius: 20px; border: 1px solid var(--clay-light); padding: 2rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-      <div>
-        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; font-weight: 300;">BMI is calculated from your height and weight. We measure both on-site with a clinical scale and stadiometer — no guessing.</p>
-        <!-- BMI spectrum bar -->
-        <div style="position: relative; margin-bottom: 2.5rem;">
-          <div style="height: 18px; border-radius: 999px; background: linear-gradient(to right, #4E7C54 0%, #4E7C54 30%, #EF9F27 30%, #EF9F27 55%, #C05A30 55%, #C05A30 75%, #A32D2D 75%, #A32D2D 100%);"></div>
-          <div style="display: flex; justify-content: space-between; margin-top: 0.5rem; position: relative;">
-            <span style="font-size: 0.75rem; color: var(--text-muted); position: absolute; left: 0;">18.5</span>
-            <span style="font-size: 0.75rem; color: var(--text-muted); position: absolute; left: 30%; transform: translateX(-50%);">25</span>
-            <span style="font-size: 0.75rem; color: var(--text-muted); position: absolute; left: 55%; transform: translateX(-50%);">30</span>
-            <span style="font-size: 0.75rem; color: var(--text-muted); position: absolute; left: 75%; transform: translateX(-50%);">35</span>
-            <span style="font-size: 0.75rem; color: var(--text-muted); position: absolute; right: 0;">40+</span>
-          </div>
-          <div style="margin-top: 1.25rem; font-size: 0.7rem; color: var(--text-muted); text-align: right;">kg/m²</div>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-          <div style="display: flex; align-items: center; gap: 1rem;"><div style="width: 14px; height: 14px; border-radius: 50%; background: #4E7C54; flex-shrink: 0;"></div><div style="flex: 1;"><span style="font-family: 'Lora', serif; font-size: 1rem; color: var(--earth); font-weight: 500;">Healthy Weight</span></div><span style="font-size: 0.9rem; color: var(--text-muted); white-space: nowrap;">18.5 – 24.9</span></div>
-          <div style="display: flex; align-items: center; gap: 1rem;"><div style="width: 14px; height: 14px; border-radius: 50%; background: #EF9F27; flex-shrink: 0;"></div><div style="flex: 1;"><span style="font-family: 'Lora', serif; font-size: 1rem; color: var(--earth); font-weight: 500;">Overweight</span></div><span style="font-size: 0.9rem; color: var(--text-muted); white-space: nowrap;">25.0 – 29.9</span></div>
-          <div style="display: flex; align-items: center; gap: 1rem;"><div style="width: 14px; height: 14px; border-radius: 50%; background: #C05A30; flex-shrink: 0;"></div><div style="flex: 1;"><span style="font-family: 'Lora', serif; font-size: 1rem; color: var(--earth); font-weight: 500;">Obese (Class I)</span></div><span style="font-size: 0.9rem; color: var(--text-muted); white-space: nowrap;">30.0 – 34.9</span></div>
-          <div style="display: flex; align-items: center; gap: 1rem;"><div style="width: 14px; height: 14px; border-radius: 50%; background: #A32D2D; flex-shrink: 0;"></div><div style="flex: 1;"><span style="font-family: 'Lora', serif; font-size: 1rem; color: var(--earth); font-weight: 500;">Obese (Class II+)</span></div><span style="font-size: 0.9rem; color: var(--text-muted); white-space: nowrap;">35.0 or higher</span></div>
-        </div>
-      </div>
-      <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--clay-light);">
-        <p style="font-size: 0.8rem; color: var(--text-muted); font-weight: 300;">BMI is a screening tool, not a diagnosis. Muscle mass, age, and ethnicity all affect interpretation. We'll review your results with you in context. Based on CDC/WHO guidelines.</p>
-        <p style="font-size: 0.95rem; margin-top: 0.5rem;"><a href="https://www.cdc.gov/bmi/about/index.html" target="_blank" style="color: var(--clay); text-decoration: underline;">Learn more about BMI at cdc.gov</a></p>
-      </div>
-    </div>
-
-    <!-- Mobile cards -->
-    <div class="bp-cards-mobile">
-      <div class="health-card" style="border-left: 4px solid #4E7C54;"><div class="health-card-title"><div class="health-dot" style="background:#4E7C54;"></div>Healthy Weight</div><div class="health-card-vals"><span>BMI</span><strong>18.5 – 24.9</strong></div></div>
-      <div class="health-card" style="border-left: 4px solid #EF9F27;"><div class="health-card-title"><div class="health-dot" style="background:#EF9F27;"></div>Overweight</div><div class="health-card-vals"><span>BMI</span><strong>25.0 – 29.9</strong></div></div>
-      <div class="health-card" style="border-left: 4px solid #C05A30;"><div class="health-card-title"><div class="health-dot" style="background:#C05A30;"></div>Obese (Class I)</div><div class="health-card-vals"><span>BMI</span><strong>30.0 – 34.9</strong></div></div>
-      <div class="health-card" style="border-left: 4px solid #A32D2D;"><div class="health-card-title"><div class="health-dot" style="background:#A32D2D;"></div>Obese (Class II+)</div><div class="health-card-vals"><span>BMI</span><strong>35.0 or higher</strong></div></div>
-      <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.75rem; font-weight: 300;">BMI is a screening tool, not a diagnosis. We measure height and weight on-site with clinical equipment.</p>
-      <p style="font-size: 0.9rem; margin-top: 0.5rem;"><a href="https://www.cdc.gov/bmi/about/index.html" target="_blank" style="color: var(--clay); text-decoration: underline;">Learn more at cdc.gov</a></p>
-    </div>
-    </div>
-
   </div>
   </div>
 </section>
@@ -1727,8 +1298,19 @@
   </div>
 </section>
 
+<!-- SPONSOR -->
+<section style="padding: 3.5rem 4rem 1rem; text-align: center;">
+  <p style="font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1.5rem; font-weight: 500;">Fiscally sponsored by</p>
+  <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 2rem;">
+    <a href="https://semosuh.com/healthforce" target="_blank" style="display: inline-flex; flex-direction: column; align-items: center; padding: 1.25rem 2rem; border: 1px solid var(--clay-light); border-radius: 14px; text-decoration: none; font-family: 'Lora', serif; color: var(--earth); transition: border-color 0.2s, background 0.2s; min-width: 240px;" onmouseover="this.style.background='var(--mist)'; this.style.borderColor='var(--clay)'" onmouseout="this.style.background='transparent'; this.style.borderColor='var(--clay-light)'">
+      <span style="font-size: 1.1rem; font-weight: 500;">Healthforce Foundation, Inc.</span>
+      <span style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.35rem; letter-spacing: 0.04em;">IRS 501(c)(3) non-profit · EIN 46-3357787</span>
+    </a>
+  </div>
+</section>
+
 <!-- PARTNERS -->
-<section style="padding: 3.5rem 4rem; text-align: center; border-top: 1px solid var(--clay-light);">
+<section style="padding: 2rem 4rem 3.5rem; text-align: center;">
   <p style="font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 2rem; font-weight: 500;">Our healthcare partners</p>
   <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 2rem;">
     <a href="https://pacificprimarycare.net/" target="_blank" style="display: inline-block; padding: 1rem 2rem; border: 1px solid var(--clay-light); border-radius: 14px; text-decoration: none; font-family: 'Lora', serif; font-size: 1.1rem; color: var(--earth); transition: border-color 0.2s, background 0.2s;" onmouseover="this.style.background='var(--mist)'; this.style.borderColor='var(--clay)'" onmouseout="this.style.background='transparent'; this.style.borderColor='var(--clay-light)'">Pacific Primary Care</a>
