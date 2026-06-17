@@ -826,36 +826,6 @@
       </div>
     </div>
 
-    <hr style="border: none; border-top: 1px solid var(--mist); margin: 2.5rem 0;">
-
-    <p style="font-family: 'Lora', serif; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.6rem;">Quick self-check</p>
-    <h3 style="font-family: 'Lora', serif; font-size: 1.25rem; font-weight: 600; margin-bottom: 1.25rem; color: var(--earth);">Which barrier sounds most like you?</h3>
-    <p style="font-family: 'Lora', serif; font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1rem;">Be honest — identifying the reason is the first step. Select one below.</p>
-
-    <button class="barrier-btn" onclick="selectBarrier(this, 'fear')" style="display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid #e0dcd4;border-radius:10px;cursor:pointer;background:white;text-align:left;width:100%;margin-bottom:10px;font-family:'Lora',serif;transition:background 0.15s,border-color 0.15s;">
-      <span style="font-size:1.25rem;flex-shrink:0;">😰</span>
-      <span style="font-size:1.05rem;color:var(--earth);font-weight:600;">Fear of what they might find</span>
-    </button>
-    <button class="barrier-btn" onclick="selectBarrier(this, 'work')" style="display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid #e0dcd4;border-radius:10px;cursor:pointer;background:white;text-align:left;width:100%;margin-bottom:10px;font-family:'Lora',serif;transition:background 0.15s,border-color 0.15s;">
-      <span style="font-size:1.25rem;flex-shrink:0;">💼</span>
-      <span style="font-size:1.05rem;color:var(--earth);font-weight:600;">Missing work / losing pay</span>
-    </button>
-    <button class="barrier-btn" onclick="selectBarrier(this, 'tough')" style="display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid #e0dcd4;border-radius:10px;cursor:pointer;background:white;text-align:left;width:100%;margin-bottom:10px;font-family:'Lora',serif;transition:background 0.15s,border-color 0.15s;">
-      <span style="font-size:1.25rem;flex-shrink:0;">💪</span>
-      <span style="font-size:1.05rem;color:var(--earth);font-weight:600;">Feeling like it's not necessary</span>
-    </button>
-    <button class="barrier-btn" onclick="selectBarrier(this, 'access')" style="display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid #e0dcd4;border-radius:10px;cursor:pointer;background:white;text-align:left;width:100%;margin-bottom:10px;font-family:'Lora',serif;transition:background 0.15s,border-color 0.15s;">
-      <span style="font-size:1.25rem;flex-shrink:0;">📅</span>
-      <span style="font-size:1.05rem;color:var(--earth);font-weight:600;">Hard to get an appointment</span>
-    </button>
-    <button class="barrier-btn" onclick="selectBarrier(this, 'mistrust')" style="display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid #e0dcd4;border-radius:10px;cursor:pointer;background:white;text-align:left;width:100%;margin-bottom:10px;font-family:'Lora',serif;transition:background 0.15s,border-color 0.15s;">
-      <span style="font-size:1.25rem;flex-shrink:0;">🤝</span>
-      <span style="font-size:1.05rem;color:var(--earth);font-weight:600;">Don't trust doctors / bad past experiences</span>
-    </button>
-
-    <div id="result-box" style="display:none; background:var(--mist); border-left:3px solid var(--clay); border-radius:0 10px 10px 0; padding:1rem 1.25rem; margin-top:1rem;">
-      <p id="result-text" style="font-family:'Lora',serif; font-size:0.875rem; line-height:1.7; color:var(--earth);"></p>
-    </div>
 
     <!-- Citations & Disclaimer -->
     <div style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--mist);">
@@ -876,35 +846,6 @@
   </div>
 </section>
 
-<script>
-  const barrierMessages = {
-    fear: "Fear of diagnosis is the #1 reason men avoid care — and it's completely understandable. But conditions like high blood pressure and prediabetes have no symptoms. The only way to know is to check. Early detection makes treatment far easier.",
-    work: "Missing work is a real barrier, especially for hourly workers. Some clinics offer early morning, evening, and weekend appointments. Ask about this when you call — your health is worth one hour of lost pay.",
-    tough: "Gym-goers often have excellent cardiovascular fitness, but that doesn't protect against high blood pressure, diabetes, or cholesterol issues. Many serious conditions have zero symptoms. A checkup takes 30 minutes and tells you what the weights can't.",
-    access: "Access is a genuine challenge. Look for community health clinics that offer extended hours or same-week appointments. Many also offer sliding-scale fees based on income.",
-    mistrust: "Mistrust of the healthcare system is valid — especially if you've been dismissed, misdiagnosed, or treated unfairly. Community-based screenings like ours exist to meet you where you are, with no judgment and no pressure. Knowing your numbers puts you in control, not the doctor."
-  };
-
-  function selectBarrier(btn, key) {
-    document.querySelectorAll('.barrier-btn').forEach(b => {
-      b.style.borderColor = 'var(--clay-light)';
-      b.style.background = 'white';
-    });
-    btn.style.borderColor = '#F4A828';
-    btn.style.background = 'var(--mist)';
-    const box = document.getElementById('result-box');
-    document.getElementById('result-text').textContent = barrierMessages[key];
-    box.style.display = 'block';
-  }
-
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      document.querySelectorAll('.bar-fill').forEach(bar => {
-        bar.style.width = bar.dataset.target + '%';
-      });
-    }, 400);
-  });
-</script>
 
 <!-- HAWAI'I TARGETED PREVENTION -->
 <section style="background: #0D3B6E; padding: 5rem 4rem;">
@@ -942,7 +883,7 @@
         <div style="font-family: 'Lora', serif; font-size: 2.25rem; font-weight: 700; color: #F4A828; line-height: 1; margin-bottom: 0.5rem;">156k</div>
         <p style="font-size: 0.9rem; color: rgba(255,255,255,0.75); line-height: 1.6; font-weight: 300;">estimated adults in Hawai'i with CKD. The state's kidney failure rate is 30% above the national level.</p>
         <div style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1);">
-          <p style="font-size: 0.82rem; color: rgba(255,255,255,0.55); line-height: 1.5; font-weight: 300;"><strong style="color: #F4A828;">9 in 10</strong> adults with CKD don't know they have it. A urine dipstick can catch it early.</p>
+          <p style="font-size: 0.82rem; color: rgba(255,255,255,0.55); line-height: 1.5; font-weight: 300;"><strong style="color: #F4A828;">9 in 10</strong> adults with CKD don't know they have it — and it often goes undetected until late.</p>
         </div>
       </div>
 
@@ -951,7 +892,7 @@
     <!-- Connection callout -->
     <div style="background: rgba(244,168,40,0.1); border: 1px solid rgba(244,168,40,0.25); border-radius: 16px; padding: 1.5rem 1.75rem; margin-bottom: 1.5rem;">
       <h3 style="font-family: 'Lora', serif; font-size: 1.15rem; color: white; margin-bottom: 0.75rem;">These conditions are connected.</h3>
-      <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.7; font-weight: 300; margin-bottom: 0;">Diabetes and hypertension are the two leading causes of kidney disease — and high blood pressure often shows no symptoms until damage is already done. That's why our screening checks <strong style="color: white;">blood pressure</strong> and <strong style="color: white;">urine</strong> (for kidney damage and diabetes) — two tests that take 10 minutes and can catch problems years before symptoms appear.</p>
+      <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.7; font-weight: 300; margin-bottom: 0;">Diabetes and hypertension are the two leading causes of kidney disease — and high blood pressure often shows no symptoms until damage is already done. That's why a quick <strong style="color: white;">blood pressure</strong> check matters — it takes only minutes and can catch problems years before symptoms appear.</p>
     </div>
 
     <!-- Disparity callout -->
@@ -984,7 +925,7 @@
           <div>
             <p style="font-size: 0.8rem; font-weight: 500; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Preventative Screening</p>
             <div style="font-family: 'Lora', serif; font-size: 3.5rem; font-weight: 500; color: white; line-height: 1;">$0</div>
-            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); margin-top: 0.75rem; line-height: 1.6;">Blood pressure and urine dipstick check. Takes 10 minutes. Know your numbers today.</p>
+            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); margin-top: 0.75rem; line-height: 1.6;">Blood pressure check. Takes only minutes. Know your numbers today.</p>
           </div>
 
         </div>
@@ -1091,14 +1032,6 @@
       </div>
     </div>
     <div class="program-card">
-      <div class="program-card-top" style="background: #8a4a9a;"></div>
-      <div class="program-card-body">
-        <h3>Urine Dipstick Screening</h3>
-        <p>Simple urine test to check for early signs of kidney disease and diabetes — conditions that are often silent until advanced. Hawai'i's kidney failure rate is 30% above the national average.</p>
-        <span class="program-tag" style="background: var(--mist); color: #8a4a9a;">Monthly · Free</span>
-      </div>
-    </div>
-    <div class="program-card">
       <div class="program-card-top" style="background: var(--bark);"></div>
       <div class="program-card-body">
         <h3>Health Navigation</h3>
@@ -1163,110 +1096,9 @@
     </div>
     </div>
 
-    <!-- Blood Sugar Spectrum -->
-    <div style="flex: 1; min-width: 500px; max-width: 600px; display: flex; flex-direction: column;" class="chart-col">
-    <p style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--clay); font-weight: 500; margin-bottom: 0.75rem;">Fasting Blood Sugar Levels</p>
-
-    <!-- Desktop view -->
-    <div class="bp-table-desktop" style="background: white; border-radius: 20px; border: 1px solid var(--clay-light); padding: 2rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-      <div style="position: relative; margin-bottom: 2.5rem;">
-        <div style="height: 18px; border-radius: 999px; background: linear-gradient(to right, #4E7C54 0%, #4E7C54 35%, #EF9F27 35%, #EF9F27 60%, #C05A30 60%, #C05A30 80%, #A32D2D 80%, #A32D2D 100%);"></div>
-        <div style="display: flex; justify-content: space-between; margin-top: 0.5rem; position: relative;">
-          <span style="font-size: 0.75rem; color: var(--text-muted); position: absolute; left: 0;">0</span>
-          <span style="font-size: 0.75rem; color: var(--text-muted); position: absolute; left: 35%; transform: translateX(-50%);">100</span>
-          <span style="font-size: 0.75rem; color: var(--text-muted); position: absolute; left: 60%; transform: translateX(-50%);">126</span>
-          <span style="font-size: 0.75rem; color: var(--text-muted); position: absolute; left: 80%; transform: translateX(-50%);">180</span>
-          <span style="font-size: 0.75rem; color: var(--text-muted); position: absolute; right: 0;">200+</span>
-        </div>
-        <div style="margin-top: 1.25rem; font-size: 0.7rem; color: var(--text-muted); text-align: right;">mg/dL</div>
-      </div>
-      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-        <div style="display: flex; align-items: center; gap: 1rem;"><div style="width: 14px; height: 14px; border-radius: 50%; background: #4E7C54; flex-shrink: 0;"></div><div style="flex: 1;"><span style="font-family: 'Lora', serif; font-size: 1rem; color: var(--earth); font-weight: 500;">Normal</span></div><span style="font-size: 0.9rem; color: var(--text-muted); white-space: nowrap;">Less than 100 mg/dL</span></div>
-        <div style="display: flex; align-items: center; gap: 1rem;"><div style="width: 14px; height: 14px; border-radius: 50%; background: #EF9F27; flex-shrink: 0;"></div><div style="flex: 1;"><span style="font-family: 'Lora', serif; font-size: 1rem; color: var(--earth); font-weight: 500;">Prediabetes</span></div><span style="font-size: 0.9rem; color: var(--text-muted); white-space: nowrap;">100–125 mg/dL</span></div>
-        <div style="display: flex; align-items: center; gap: 1rem;"><div style="width: 14px; height: 14px; border-radius: 50%; background: #C05A30; flex-shrink: 0;"></div><div style="flex: 1;"><span style="font-family: 'Lora', serif; font-size: 1rem; color: var(--earth); font-weight: 500;">Diabetes</span></div><span style="font-size: 0.9rem; color: var(--text-muted); white-space: nowrap;">126 mg/dL or higher</span></div>
-        <div style="display: flex; align-items: center; gap: 1rem;"><div style="width: 14px; height: 14px; border-radius: 50%; background: #A32D2D; flex-shrink: 0;"></div><div style="flex: 1;"><span style="font-family: 'Lora', serif; font-size: 1rem; color: var(--earth); font-weight: 500;">High Risk</span><p style="font-size: 0.8rem; color: #A32D2D;">Seek medical attention</p></div><span style="font-size: 0.9rem; color: var(--text-muted); white-space: nowrap;">180 mg/dL or higher</span></div>
-      </div>
-      <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--clay-light);">
-        <p style="font-size: 0.8rem; color: var(--text-muted); font-weight: 300;">Values based on fasting blood glucose test. Based on American Diabetes Association guidelines.</p>
-        <p style="font-size: 0.95rem; margin-top: 0.5rem;"><a href="https://www.diabetes.org/diabetes/a1c/blood-sugar-and-a1c" target="_blank" style="color: var(--clay); text-decoration: underline;">Learn more about blood sugar at diabetes.org</a></p>
-      </div>
-    </div>
-
-    <!-- Mobile cards -->
-    <div class="bp-cards-mobile">
-      <div class="health-card" style="border-left: 4px solid #4E7C54;"><div class="health-card-title"><div class="health-dot" style="background:#4E7C54;"></div>Normal</div><div class="health-card-vals"><span>Fasting blood sugar</span><strong>Less than 100 mg/dL</strong></div></div>
-      <div class="health-card" style="border-left: 4px solid #EF9F27;"><div class="health-card-title"><div class="health-dot" style="background:#EF9F27;"></div>Prediabetes</div><div class="health-card-vals"><span>Fasting blood sugar</span><strong>100–125 mg/dL</strong></div></div>
-      <div class="health-card" style="border-left: 4px solid #C05A30;"><div class="health-card-title"><div class="health-dot" style="background:#C05A30;"></div>Diabetes</div><div class="health-card-vals"><span>Fasting blood sugar</span><strong>126 mg/dL or higher</strong></div></div>
-      <div class="health-card" style="border-left: 4px solid #A32D2D; background: #fff0f0;"><div class="health-card-title"><div class="health-dot" style="background:#A32D2D;"></div>High Risk</div><p style="font-size:0.8rem; color:#A32D2D; margin: 0.25rem 0 0.5rem;">Seek medical attention</p><div class="health-card-vals"><span>Fasting blood sugar</span><strong>180 mg/dL or higher</strong></div></div>
-      <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.75rem; font-weight: 300;">Values based on fasting blood glucose test. American Diabetes Association guidelines.</p>
-      <p style="font-size: 0.9rem; margin-top: 0.5rem;"><a href="https://www.diabetes.org/diabetes/a1c/blood-sugar-and-a1c" target="_blank" style="color: var(--clay); text-decoration: underline;">Learn more at diabetes.org</a></p>
-    </div>
-    </div>
 
   </div>
 
-  <!-- Second row: Urine Dipstick -->
-  <div style="margin-top: 2rem; display: flex; gap: 2rem; align-items: stretch; flex-wrap: wrap; justify-content: center;" class="charts-flex">
-
-    <!-- Urine Dipstick Chart -->
-    <div style="flex: 1; min-width: 500px; max-width: 600px; display: flex; flex-direction: column;" class="chart-col">
-    <p style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: #8a4a9a; font-weight: 500; margin-bottom: 0.75rem;">Urine Dipstick — What We Check</p>
-
-    <div class="bp-table-desktop" style="background: white; border-radius: 20px; border: 1px solid var(--clay-light); padding: 2rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-      <div>
-        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; font-weight: 300;">A urine dipstick detects protein (albumin) and glucose in urine — early markers of kidney damage and uncontrolled diabetes that blood tests alone can miss.</p>
-        <div style="display: flex; flex-direction: column; gap: 1rem;">
-          <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 1rem; background: #f5f0e8; border-radius: 12px;">
-            <div style="width: 14px; height: 14px; border-radius: 50%; background: #8a4a9a; flex-shrink: 0; margin-top: 3px;"></div>
-            <div style="flex: 1;">
-              <span style="font-family: 'Lora', serif; font-size: 1rem; color: var(--earth); font-weight: 500;">Protein (Albumin)</span>
-              <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin-top: 0.25rem;">Healthy kidneys keep protein in your blood. If protein leaks into urine, it's an early sign of kidney damage — often caused by unmanaged diabetes or high blood pressure.</p>
-              <div style="margin-top: 0.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                <span style="font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 999px; background: rgba(78,124,84,0.15); color: #4E7C54; font-weight: 500;">Negative = Normal</span>
-                <span style="font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 999px; background: rgba(192,90,48,0.15); color: #C05A30; font-weight: 500;">Trace or higher = Follow up</span>
-              </div>
-            </div>
-          </div>
-          <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 1rem; background: #f5f0e8; border-radius: 12px;">
-            <div style="width: 14px; height: 14px; border-radius: 50%; background: #C05A30; flex-shrink: 0; margin-top: 3px;"></div>
-            <div style="flex: 1;">
-              <span style="font-family: 'Lora', serif; font-size: 1rem; color: var(--earth); font-weight: 500;">Glucose</span>
-              <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin-top: 0.25rem;">Glucose in urine usually means blood sugar is too high for kidneys to filter it all. This can indicate undiagnosed or poorly controlled diabetes.</p>
-              <div style="margin-top: 0.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                <span style="font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 999px; background: rgba(78,124,84,0.15); color: #4E7C54; font-weight: 500;">Negative = Normal</span>
-                <span style="font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 999px; background: rgba(192,90,48,0.15); color: #C05A30; font-weight: 500;">Positive = Follow up</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--clay-light);">
-        <p style="font-size: 0.8rem; color: var(--text-muted); font-weight: 300;">Abnormal results don't always mean disease — hydration, diet, and medications can affect readings. Any positive result will be reviewed with you on-site.</p>
-        <p style="font-size: 0.95rem; margin-top: 0.5rem;"><a href="https://www.kidney.org/kidney-topics/what-you-should-know-about-albuminuria-proteinuria" target="_blank" style="color: var(--clay); text-decoration: underline;">Learn more about kidney screening at kidney.org</a></p>
-      </div>
-    </div>
-
-    <!-- Mobile cards -->
-    <div class="bp-cards-mobile">
-      <div class="health-card" style="border-left: 4px solid #8a4a9a;">
-        <div class="health-card-title"><div class="health-dot" style="background:#8a4a9a;"></div>Protein (Albumin)</div>
-        <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6; margin-bottom:0.5rem;">Detects early kidney damage — often caused by diabetes or high blood pressure.</p>
-        <div class="health-card-vals"><span>Normal</span><strong>Negative</strong></div>
-        <div class="health-card-vals"><span>Needs follow-up</span><strong>Trace or higher</strong></div>
-      </div>
-      <div class="health-card" style="border-left: 4px solid #C05A30;">
-        <div class="health-card-title"><div class="health-dot" style="background:#C05A30;"></div>Glucose in Urine</div>
-        <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6; margin-bottom:0.5rem;">Can indicate undiagnosed or uncontrolled diabetes.</p>
-        <div class="health-card-vals"><span>Normal</span><strong>Negative</strong></div>
-        <div class="health-card-vals"><span>Needs follow-up</span><strong>Positive</strong></div>
-      </div>
-      <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.75rem; font-weight: 300;">Abnormal results don't always mean disease. Any positive result will be reviewed with you on-site.</p>
-      <p style="font-size: 0.9rem; margin-top: 0.5rem;"><a href="https://www.kidney.org/kidney-topics/what-you-should-know-about-albuminuria-proteinuria" target="_blank" style="color: var(--clay); text-decoration: underline;">Learn more at kidney.org</a></p>
-    </div>
-    </div>
-
-  </div>
-  </div>
 </section>
 
 
