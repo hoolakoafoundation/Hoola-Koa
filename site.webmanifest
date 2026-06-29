@@ -1,0 +1,13 @@
+{
+  "name": "Ho'ōla Koa — Men's Health Hawaiʻi",
+  "short_name": "Ho'ōla Koa",
+  "description": "Free blood pressure screenings for the men of Hawaiʻi.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F2EC",
+  "theme_color": "#123D68",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
