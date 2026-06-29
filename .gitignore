@@ -1,0 +1,6 @@
+# Local backups and source archives (not part of the published site)
+index_old_backup.html
+drive-download-*.zip
+
+# Source deck — not referenced by the site
+assets/*.pptx
