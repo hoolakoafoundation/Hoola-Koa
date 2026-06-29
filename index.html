@@ -261,7 +261,7 @@
   }
   /* Logo marks: navy line-art (transparent) framed by CSS so dark bgs get a clean cream circle */
   .brand-mark{width:46px;height:46px;flex:0 0 auto;background:var(--mark) center/contain no-repeat}
-  .hero-art .disc-inner{width:78%;aspect-ratio:1;border-radius:50%;background:var(--cream) var(--mark) center/62% no-repeat;box-shadow:0 8px 22px rgba(14,42,71,.28)}
+  .hero-art .hero-mark{display:block;width:min(380px,84%);aspect-ratio:1;margin:0 auto;background:var(--mark) center/contain no-repeat}
   .foot-mark{width:50px;height:50px;flex:0 0 auto;border-radius:50%;background:var(--cream) var(--mark) center/66% no-repeat}
   .partner-coin{width:74%;aspect-ratio:1;background:var(--mark) center/contain no-repeat}
 </style>
@@ -310,10 +310,7 @@
       </p>
     </div>
     <div class="hero-art reveal">
-      <div class="disc">
-        <span class="disc-inner" role="img" aria-label="Hoola Koa logo"></span>
-        <span class="ribbon">Know your numbers</span>
-      </div>
+      <span class="hero-mark" role="img" aria-label="Hoola Koa logo"></span>
     </div>
   </div>
 </section>
