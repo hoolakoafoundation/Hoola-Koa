@@ -4,3 +4,6 @@ drive-download-*.zip
 
 # Source deck — not referenced by the site
 assets/*.pptx
+
+# Local preview/dev helper
+.claude/
